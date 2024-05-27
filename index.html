@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="portfolio-container">
+        <ul class="navlist">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="left-container">
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-codepen"></i>
+            </div>
+            <div class="content">
+                <p class="intro">Hi I am <span>Sudhaanshu Mishra</span></p>
+                <h1>Event Manager.</h1>
+                <p class="detail">Experienced Event Manager with 5+ years in planning and executing successful events, ensuring client satisfaction and operational efficiency.</p>
+                <div class="btn-container">
+                    <button>About Me</button><button>Feedback</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-container"></div>
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    
+    <!-- About Me Section -->
+    <div id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="image/1-modified.jpg" alt="Sudhaanshu Mishra">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Sudhaanshu Mishra is an accomplished Event Manager with a distinguished career spanning over five years. With a keen eye for detail and a passion for excellence, Sudhaanshu has honed his expertise in orchestrating and overseeing a myriad of successful events. His commitment to ensuring client satisfaction, coupled with his adept organizational skills, has consistently led to the seamless execution of each project under his purview.
+
+                    Throughout his career, Sudhaanshu has demonstrated a remarkable ability to navigate the intricacies of event planning with finesse. From conceptualization to execution, he meticulously oversees every aspect of the event, ensuring that each detail aligns with the client's vision and objectives. His proactive approach enables him to anticipate challenges and devise effective strategies to mitigate risks, thereby ensuring operational efficiency and timely delivery.
+                    
+                    Moreover, Sudhaanshu's strong communication skills and collaborative nature foster harmonious relationships with clients, vendors, and team members alike. He believes in the power of teamwork and leverages his leadership abilities to inspire and motivate his colleagues towards achieving common goals.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <h2>Work</h2>
+        <div class="work-items">
+            <div class="work-item">
+                <i class="fas fa-briefcase"></i>
+                <h3>Event Manager</h3>
+                <p class="company">Royal Orchid</p>
+                <p class="dates">January 2021 - Present</p>
+                <p class="description">An Event Manager with 3 years of experience at Royal Orchid, specializing in organizing and executing seamless events, ensuring client satisfaction, and managing operational logistics.</p>
+            </div>
+            <div class="work-item">
+                <i class="fas fa-briefcase"></i>
+                <h3>Hotel manager</h3>
+                <p class="company">seasoning</p>
+                <p class="dates">June 2017 - December 2020</p>
+                <p class="description">
+                    Experienced Hotel Manager with expertise in overseeing daily operations, managing staff, ensuring guest satisfaction, optimizing profitability, maintaining high standards, and implementing effective policies for a seamless and efficient hotel experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+  
+        <h1 class="section-header">Contact</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+              </div>
+            
+            </div>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Indore, India</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+91 93996 90798</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">Sudhaanshumishra@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              
+      
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED <style>
+                .copyright{
+                    color: white;
+                }
+              </style></div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            e.target.elements.name.value = '';
+            e.target.elements.email.value = '';
+            e.target.elements.message.value = '';
+          });
+        
+    </script>      
+</body>
+</html>
